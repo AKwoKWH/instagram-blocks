@@ -1,11 +1,11 @@
 {
     "message": "feedback_required",
-    "spam": true, 
-    "feedback_title": "Action Blocked", 
+    "spam": true,
+    "feedback_title": "Action Blocked",
     "feedback_message": "Based on previous use of this feature, your account has been temporarily blocked from taking this action. This block will expire on 2019-05-06. We restrict certain content and actions to protect our community. Tell us if you think we made a mistake.",
-    "feedback_url": "repute/report_problem/user_restriction_LIKE_RESTRICT/", 
-    "feedback_appeal_label": "Tell us", 
-    "feedback_ignore_label": "OK", 
-    "feedback_action": "report_problem", 
-    "status": "fail"
+    "feedback_url": "repute/report_problem/user_restriction_LIKE_RESTRICT/",
+    "feedback_appeal_label": "Tell us",
+    "feedback_ignore_label": "OK",
+    "feedback_action": "report_problem",
+    "status": "fail",
 }

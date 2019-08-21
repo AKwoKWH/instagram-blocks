@@ -9,17 +9,17 @@ block_time = 24 * 60 * 60
 block_timestamp = time.localtime(time.time() + block_time)
 block_date = time.strftime("%Y-%m-%d", block_timestamp)
 json_reponse = {
-    "message": "feedback_required", 
-    "spam": True, 
+    "message": "feedback_required",
+    "spam": True,
     "feedback_title": "Action Blocked",
     "feedback_message": "Your account has been temporarily blocked from taking this action. Sharing your account with a service that helps you get more likes or followers goes against our Community Guidelines. This block will expire on {}. Tell us if you think we made a mistake.".format(
         block_date
     ),
-    "feedback_url": "repute/report_problem/user_restriction_LIKE_RESTRICT/", 
-    "feedback_appeal_label": "Tell us", 
-    "feedback_ignore_label": "OK", 
-    "feedback_action": "report_problem", 
-    "status": "fail"
+    "feedback_url": "repute/report_problem/user_restriction_LIKE_RESTRICT/",
+    "feedback_appeal_label": "Tell us",
+    "feedback_ignore_label": "OK",
+    "feedback_action": "report_problem",
+    "status": "fail",
 }
 # --------------------------------------------------------------------------------------
 
