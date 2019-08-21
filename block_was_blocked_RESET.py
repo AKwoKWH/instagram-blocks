@@ -8,7 +8,9 @@ bot = Bot()
 bot.logout()
 
 time.sleep(
-    (60 * 5) + random.randint(0, 60 * 5) + random.random()
+    (60 * 5)
+    + random.randint(0, 60 * 5)
+    + random.random()
     # at least 5 minutes
 )
 
@@ -17,5 +19,5 @@ bot.login(
     is_threaded=True,
     # ----------------------------
     use_cookie=False,
-    use_uuid=True
+    use_uuid=True,
 )
