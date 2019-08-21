@@ -2,4 +2,5 @@
 
 Collection of block types
   - images
-  - json response
+  - json response (if any)
+  - known reset examples (if any)
