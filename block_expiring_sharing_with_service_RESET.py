@@ -3,22 +3,23 @@ import datetime
 
 # EXAMPLE OF RESPONSE
 # the response will send a block expiring after 24h from now
+# TODO: response json is incomplete
 # --------------------------------------------------------------------------------------
 block_time = 24 * 60 * 60
 block_timestamp = time.localtime(time.time() + block_time)
 block_date = time.strftime("%Y-%m-%d", block_timestamp)
 json_reponse = {
-    "message": "feedback_required",
-    "spam": True,
+    "message": None,  # likely "feedback_required"
+    "spam": None,  # likely true
     "feedback_title": "Action Blocked",
-    "feedback_message": "Based on previous use of this feature, your account has been temporarily blocked from taking this action. This block will expire on {}. We restrict certain content and actions to protect our community. Tell us if you think we made a mistake.".format(
+    "feedback_message": "Your account has bene temporarily blocked from taking this action. Sharing your account with a service that helps you get more likes or followers goes against our Community Guidelines. This block will expire on {}. Tell us if you think we made a mistake.".format(
         block_date
     ),
-    "feedback_url": "repute/report_problem/user_restriction_LIKE_RESTRICT/",
+    "feedback_url": None,  # likely "repute/report_problem/user_restriction_LIKE_RESTRICT/"
     "feedback_appeal_label": "Tell us",
     "feedback_ignore_label": "OK",
-    "feedback_action": "report_problem",
-    "status": "fail",
+    "feedback_action": None,  # likely "report_problem"
+    "status": None,  # likely "fail"
 }
 # --------------------------------------------------------------------------------------
 

@@ -5,6 +5,9 @@ from instabot import Bot
 
 bot = Bot()
 
+# RESET working for like blocks
+# it is still unclear if this works for follow blocks too
+# ---------------------------------------------------------
 bot.logout()
 
 time.sleep(
@@ -15,9 +18,11 @@ time.sleep(
 )
 
 bot.login(
-    # if in threaded scheduled job
+    # if in threaded scheduled job only:
+    # ----------------
     is_threaded=True,
-    # ----------------------------
+    # ----------------
     use_cookie=False,
     use_uuid=True,
 )
+# ---------------------------------------------------------
